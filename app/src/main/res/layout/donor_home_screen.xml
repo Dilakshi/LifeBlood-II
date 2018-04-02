@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="30dp"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context="com.graise.ansafn.lifeblood.ExistingDonor">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Hi User"
+        android:textSize="24dp"/>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:layout_marginTop="100dp">
+
+        <Button
+            android:id="@+id/btnChkEligibility"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:textSize="22dp"
+            android:background="#b37477"
+            android:textColor="#ffffff"
+            android:onClick="checkEligibility"
+            android:text="Check my Eligibility" />
+
+        <Button
+            android:id="@+id/btnViewReq"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:textSize="22dp"
+            android:text="View Request/Make Appointment" />
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:textSize="22dp"
+            android:text="Edit My Info" />
+        <Button
+            android:id="@+id/btnContact"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:textSize="22dp"
+            android:background="#b37477"
+            android:textColor="#ffffff"
+            android:text="Contact a Medical Practitioner" />
+    </GridLayout>
+
+</RelativeLayout>
